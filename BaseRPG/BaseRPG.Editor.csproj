@@ -5,21 +5,19 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{3427D6D7-B003-AB17-FF7C-A3683ADB495E}</ProjectGuid>
+    <ProjectGuid>{74DD5CAA-CA82-428D-F663-65C30D9FA540}</ProjectGuid>
     <OutputType>Library</OutputType>
-    <AssemblyName>Assembly-CSharp</AssemblyName>
+    <AssemblyName>Assembly-CSharp-Editor</AssemblyName>
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{E097FAD1-6243-4DAD-9C02-E9B9EFC3FFC1};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <TargetFrameworkIdentifier>.NETFramework</TargetFrameworkIdentifier>
     <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
-    <TargetFrameworkProfile>Unity Subset v3.5</TargetFrameworkProfile>
-    <CompilerResponseFile>
-    </CompilerResponseFile>
-    <UnityProjectType>Game:1</UnityProjectType>
+    <TargetFrameworkProfile>Unity Full v3.5</TargetFrameworkProfile>
+    <CompilerResponseFile></CompilerResponseFile>
+    <UnityProjectType>Editor:5</UnityProjectType>
     <UnityBuildTarget>StandaloneWindows:5</UnityBuildTarget>
     <UnityVersion>5.4.1p1</UnityVersion>
-    <RootNamespace>
-    </RootNamespace>
+    <RootNamespace></RootNamespace>
     <LangVersion>4</LangVersion>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
@@ -54,35 +52,54 @@
     <Reference Include="UnityEngine">
       <HintPath>E:/Engine/Unity/Editor/Data/Managed/UnityEngine.dll</HintPath>
     </Reference>
+    <Reference Include="UnityEditor">
+      <HintPath>E:/Engine/Unity/Editor/Data/Managed/UnityEditor.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.Advertisements">
+      <HintPath>E:/Engine/Unity/Editor/Data/UnityExtensions/Unity/Advertisements/Editor/UnityEditor.Advertisements.dll</HintPath>
+    </Reference>
+    <Reference Include="nunit.framework">
+      <HintPath>E:/Engine/Unity/Editor/Data/UnityExtensions/Unity/EditorTestsRunner/Editor/nunit.framework.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.EditorTestsRunner">
+      <HintPath>E:/Engine/Unity/Editor/Data/UnityExtensions/Unity/EditorTestsRunner/Editor/UnityEditor.EditorTestsRunner.dll</HintPath>
+    </Reference>
     <Reference Include="UnityEngine.UI">
       <HintPath>E:/Engine/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.UI">
+      <HintPath>E:/Engine/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/Editor/UnityEditor.UI.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.Networking">
       <HintPath>E:/Engine/Unity/Editor/Data/UnityExtensions/Unity/Networking/UnityEngine.Networking.dll</HintPath>
     </Reference>
-    <Reference Include="UnityEditor">
-      <HintPath>E:/Engine/Unity/Editor/Data/Managed/UnityEditor.dll</HintPath>
+    <Reference Include="UnityEditor.Networking">
+      <HintPath>E:/Engine/Unity/Editor/Data/UnityExtensions/Unity/Networking/Editor/UnityEditor.Networking.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.TreeEditor">
+      <HintPath>E:/Engine/Unity/Editor/Data/UnityExtensions/Unity/TreeEditor/Editor/UnityEditor.TreeEditor.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.Graphs">
+      <HintPath>E:/Engine/Unity/Editor/Data/Managed/UnityEditor.Graphs.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.Android.Extensions">
+      <HintPath>E:/Engine/Unity/Editor/Data/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.WindowsStandalone.Extensions">
+      <HintPath>E:/Engine/Unity/Editor/Data/PlaybackEngines/windowsstandalonesupport/UnityEditor.WindowsStandalone.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="SyntaxTree.VisualStudio.Unity.Bridge">
+      <HintPath>C:/Program Files (x86)/Microsoft Visual Studio Tools for Unity/15.0/Editor/SyntaxTree.VisualStudio.Unity.Bridge.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Script\BehaviorTree\AIAgent.cs" />
-    <Compile Include="Assets\Script\BehaviorTree\BTManager.cs" />
-    <Compile Include="Assets\Script\BehaviorTree\Base\BT_Action.CS" />
-    <Compile Include="Assets\Script\BehaviorTree\Base\BT_Composite.cs" />
-    <Compile Include="Assets\Script\BehaviorTree\Base\BT_Condition.cs" />
-    <Compile Include="Assets\Script\BehaviorTree\Base\BT_Decorator.cs" />
-    <Compile Include="Assets\Script\BehaviorTree\Base\BT_NodeBase.cs" />
-    <Compile Include="Assets\Script\BehaviorTree\ExtraBase\Action\ClearFlag.cs" />
-    <Compile Include="Assets\Script\BehaviorTree\ExtraBase\Action\SetFlag.cs" />
-    <Compile Include="Assets\Script\BehaviorTree\ExtraBase\Composite\BT_KeepSelector.cs" />
-    <Compile Include="Assets\Script\BehaviorTree\ExtraBase\Composite\BT_KeepSequence.cs" />
-    <Compile Include="Assets\Script\BehaviorTree\ExtraBase\Condition\CheckFlag.cs" />
-    <Compile Include="Assets\Script\BehaviorTree\ExtraBase\Decorator\BT_Precondition .cs" />
-    <Compile Include="Assets\Script\BehaviorTree\Helper\GameInfoHelper.cs" />
-    <Compile Include="Assets\Script\BehaviorTree\Test\BT_ACTION_TEST.cs" />
-    <Compile Include="Assets\Script\BehaviorTree\Test\BT_CONDITION_TEST.cs" />
-    <Compile Include="Assets\Script\Behaviors\RoleAniControoller.cs" />
-    <Compile Include="Assets\Script\Behaviors\RoleMoveController.cs" />
+    <ProjectReference Include="BaseRPG.csproj">
+      <Project>{3427D6D7-B003-AB17-FF7C-A3683ADB495E}</Project>
+      <Name>BaseRPG</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Assets\Editor\BehaviorTreeEditor\Reflector\BT_NODE_Attributes.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Resource\Role\部落小矮人模型包\shader\fantasy horde-goblin_Compressed MaskedShader2sided.shader" />

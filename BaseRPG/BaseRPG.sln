@@ -3,6 +3,8 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2017
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BaseRPG", "BaseRPG.csproj", "{3427D6D7-B003-AB17-FF7C-A3683ADB495E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BaseRPG.Editor", "BaseRPG.Editor.csproj", "{74DD5CAA-CA82-428D-F663-65C30D9FA540}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -13,6 +15,10 @@ Global
 		{3427D6D7-B003-AB17-FF7C-A3683ADB495E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3427D6D7-B003-AB17-FF7C-A3683ADB495E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3427D6D7-B003-AB17-FF7C-A3683ADB495E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{74DD5CAA-CA82-428D-F663-65C30D9FA540}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{74DD5CAA-CA82-428D-F663-65C30D9FA540}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{74DD5CAA-CA82-428D-F663-65C30D9FA540}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{74DD5CAA-CA82-428D-F663-65C30D9FA540}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
