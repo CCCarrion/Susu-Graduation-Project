@@ -63,6 +63,22 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Script\BehaviorTree\AIAgent.cs" />
+    <Compile Include="Assets\Script\BehaviorTree\BTManager.cs" />
+    <Compile Include="Assets\Script\BehaviorTree\Base\BT_Action.CS" />
+    <Compile Include="Assets\Script\BehaviorTree\Base\BT_Composite.cs" />
+    <Compile Include="Assets\Script\BehaviorTree\Base\BT_Condition.cs" />
+    <Compile Include="Assets\Script\BehaviorTree\Base\BT_Decorator.cs" />
+    <Compile Include="Assets\Script\BehaviorTree\Base\BT_NodeBase.cs" />
+    <Compile Include="Assets\Script\BehaviorTree\ExtraBase\Action\ClearFlag.cs" />
+    <Compile Include="Assets\Script\BehaviorTree\ExtraBase\Action\SetFlag.cs" />
+    <Compile Include="Assets\Script\BehaviorTree\ExtraBase\Composite\BT_KeepSelector.cs" />
+    <Compile Include="Assets\Script\BehaviorTree\ExtraBase\Composite\BT_KeepSequence.cs" />
+    <Compile Include="Assets\Script\BehaviorTree\ExtraBase\Condition\CheckFlag.cs" />
+    <Compile Include="Assets\Script\BehaviorTree\ExtraBase\Decorate\BT_Precondition .cs" />
+    <Compile Include="Assets\Script\BehaviorTree\Helper\GameInfoHelper.cs" />
+    <Compile Include="Assets\Script\BehaviorTree\Test\BT_ACTION_TEST.cs" />
+    <Compile Include="Assets\Script\BehaviorTree\Test\BT_CONDITION_TEST.cs" />
     <Compile Include="Assets\Script\Behaviors\RoleAniControoller.cs" />
     <Compile Include="Assets\Script\Behaviors\RoleMoveController.cs" />
   </ItemGroup>
